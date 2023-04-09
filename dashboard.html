@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script
+      src="https://kit.fontawesome.com/8bf74caa00.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Educate<span>AI</span></div>
+      <div class="nav-links">
+        <a href="dashboard.html" class="nav-link active">Home</a>
+        <a href="calendar.html" class="nav-link">Calendar</a>
+        <a href="study.html" class="nav-link">Study Plan</a>
+      </div>
+      <a href="index.html" class="btn">Take Quiz</a>
+    </nav>
+    <article>
+      <section class="tests">
+        <h1>Tests Today</h1>
+        <div class="test-box">
+          <h4>Algebra</h4>
+          <h2>Systems of Linear Equations</h2>
+          <div class="date">
+            <i class="fa-regular fa-calendar"></i>
+            <p>April 7, 2023</p>
+          </div>
+          <div class="time">
+            <i class="fa-regular fa-clock"></i>
+            <p>1:00 - 2:30</p>
+          </div>
+        </div>
+        <h1>Upcoming Tests...</h1>
+        <div class="test-box">
+          <h4>Physics</h4>
+          <h2>Rotational Motion and Torque</h2>
+          <div class="date">
+            <i class="fa-regular fa-calendar"></i>
+            <p>April 11, 2023</p>
+          </div>
+          <div class="time">
+            <i class="fa-regular fa-clock"></i>
+            <p>11:00 - 12:00</p>
+          </div>
+        </div>
+      </section>
+      <section class="grades">
+        <h1>Progress</h1>
+        <div class="progress-container">
+          <div class="progress-box">
+            <div class="progress-nums">
+              <h4>Improvements</h4>
+              <h2>39</h2>
+            </div>
+            <div class="bar">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-box">
+            <div class="progress-nums">
+              <h4>Avg Grade</h4>
+              <h2>92.4</h2>
+            </div>
+            <div class="bar">
+              <div class="circular-progress-2">
+                <span class="progress-value progress-value-2">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chartCard">
+          <div class="chartBox">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"
+    ></script>
+    <script src="lines.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

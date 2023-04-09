@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #5d3fd3;
+}
+
+body {
+  background: #5d3fd30f;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0px 3px 5px 1px #0000001a;
+  align-items: center;
+  background: #fff;
+}
+
+nav .logo {
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+nav .logo span {
+  color: var(--main-color);
+}
+
+.nav-links .nav-link {
+  margin: 0 30px;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  color: #000;
+}
+
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-links .nav-link.active {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.btn {
+  padding: 7px 15px;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--main-color);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+nav .btn {
+  margin-right: 25px;
+}
+
+#calendar {
+  height: 100;
+}
